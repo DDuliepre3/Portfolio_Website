@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About Me</title>
+        <link rel="stylesheet" href="css/homepage.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="resume.html">Resumé</a></li>
+                    <li><a href="codePen.html">CodePen</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" id="selected">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p>Dominick Duliepre</p>
+            <p><a href="mailto:dominick.duliepre@gmail.com">dominick.duliepre@gmail.com</a></p>
+            <p><a href="tel:347-563-4533">347-563-4533</a></p>
+            <p>Road to Hire Participant</p>
+        </section>
+
+        <aside class="cform">
+            <form method="GET" action="#" name="cform" class="contacts" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <div class="form--spacing">
+                        <label for="fName">First Name: (Required)
+                            <span class="error-message">First Name cannot be empty.</span>
+                        </label>
+                        <input id="fName" type="text" name="fName" placeholder="First Name" required>
+                    </div>
+
+                    <div class="form--spacing">
+                        <label for="lName">Last Name: (Required)
+                            <span class="error-message">Last Name cannot be empty.</span>
+                        </label>
+                        <input id="lName" type="text" name="lName" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="form--spacing">
+                        <label for="genderM">Male:<input id="genderM" type="radio" name="gender" value="Male"></label>
+                        <label for="genderF">Female:<input id="genderF" type="radio" name="gender" value="Female"></label>
+                        <label for="genderO">Other:<input id="genderO" type="radio" name="gender" value="Other"></label>
+                    </div>
+
+                    <div class="form--spacing">
+                        <label for="tel">Phone Number:</label>
+                        <input id="tel" type="tel" name="tel" placeholder="###-###-####">
+                    </div>
+
+                    <div class="form--spacing">
+                        <label for="email">Email: (Required)
+                            <span class="error-message">Email cannot be empty.</span>
+                        </label>
+                        <input id="email" type="email" name="eMail" placeholder="example@email.com" required>
+                    </div>
+
+                </fieldset>
+                <div class="form--spacing">
+                    <label for="comments">Comments:</label>
+                </div>
+                <div class="form--spacing">
+                    <textarea cols="90%" rows="10" placeholder="Anything on your mind..." name="textarea" id="comments"></textarea>
+                </div>
+                <input type="submit" name="Submit">
+
+                <input type="reset" name="reset">
+            </form>
+
+        </aside>
+
+        <footer>
+            <div>
+                <p><small>&copy; Copyright. Information on this site is for educational purposes only.</small></p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/nicky_dominick/"><img src="Images/Instagram.png" alt="instagram" class="footer"></a>
+                <a href="https://www.linkedin.com/in/dominick-duliepre-06b028168/"><img src="Images/LinkedIn.png" alt="LinkedIn" class="footer"></a>
+                <a href="http://road2hire.org/"><img src="Images/R2H.jpg" alt="road2hire" class="footer"></a>
+            </div>
+
+            <script src="form.js"></script>
+        </footer>
+    </body>
+</html>
